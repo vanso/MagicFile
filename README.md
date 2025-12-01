@@ -21,6 +21,26 @@ Identify the type of a file by analyzing its content using the libmagic library 
 PS> Install-Module -Name MagicFile
 ```
 
+## Available Functions in the Module
+
+| Function name            | Description                                                                          |
+|:-------------------------|:-------------------------------------------------------------------------------------|
+| Get-MagicFileType | Determines the specific type of a file by analyzing its magic number. |
+| Get-MagicFileVersion | Retrieves the version of the libmagic library. |
+| Get-MagicFileContent | Shows a list of patterns and their strength sorted descending by magic(4) strength which is used for the matching.|
+| Debug-MagicFile | Performs detailed debugging of the file type detection process, printing internal diagnostic information about the magic file and its checks. |
+| Get-MagicFilePath | Returns the full paths to the specified magic files, checking system directories or user-defined paths for the magic.mgc. |
+| ConvertTo-MagicFile | Converts a file containing a pre-parsed version of the magic file or directory into a compiled .mgc file.|
+| Test-MagicFile | Validates whether a file can be recognized as a valid magic file, based on the predefined magic patterns or user-customized magic files.|
+
+## Available Aliases in the Module
+
+| Alias name | Function name  |                                                                
+|:-------------------------|:-------------------------------------------------------------------------------------|
+|  Get-FileType          | Get-MagicFileType     |
+|  Get-ItemType       | Get-MagicFileType  |
+
+
 ## Usage
 ```powershell
 Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
