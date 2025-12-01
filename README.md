@@ -1,6 +1,6 @@
 # MagicFile
 
-MagicFile is is a PowerShell module.
+MagicFile is a PowerShell module.
 
 Identify the type of a file by analyzing its content using the libmagic library with PowerShell.
 
