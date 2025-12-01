@@ -44,6 +44,14 @@ PS> Install-Module -Name MagicFile
 ## Usage
 ```powershell
 Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -FormatType Mime
+
+Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -MagicFilePath C:\Users\Shared\magic.mgc
+
+Get-MagicFileVersion
+
+Get-MagicFilePath
 ```
 
 ## License
