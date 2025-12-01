@@ -17,8 +17,11 @@ Identify the type of a file by analyzing its content using the libmagic library 
 
 ## Installation
 
-```PS> Install-Module -Name MagicFile```
+```powershell
+PS> Install-Module -Name MagicFile
+```
 
 ## Usage
-
+```powershell
 Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+```
