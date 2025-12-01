@@ -21,6 +21,19 @@ Identify the type of a file by analyzing its content using the libmagic library 
 PS> Install-Module -Name MagicFile
 ```
 
+## Usage
+```powershell
+Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -FormatType Mime
+
+Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -MagicFilePath C:\Users\Shared\magic.mgc
+
+Get-MagicFileVersion
+
+Get-MagicFilePath
+```
+
 ## Available Functions in the Module
 
 | Function name            | Description                                                                          |
@@ -39,20 +52,6 @@ PS> Install-Module -Name MagicFile
 |:-------------------------|:-------------------------------------------------------------------------------------|
 |  Get-FileType          | Get-MagicFileType     |
 |  Get-ItemType       | Get-MagicFileType  |
-
-
-## Usage
-```powershell
-Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-
-Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -FormatType Mime
-
-Get-FileType -LiteralPath C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -MagicFilePath C:\Users\Shared\magic.mgc
-
-Get-MagicFileVersion
-
-Get-MagicFilePath
-```
 
 ## License
 
