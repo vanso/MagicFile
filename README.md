@@ -25,3 +25,7 @@ PS> Install-Module -Name MagicFile
 ```powershell
 Get-FileType C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 ```
+
+## License
+
+This module is released under the terms of the GNU General Public License (GPL), Version 2.
